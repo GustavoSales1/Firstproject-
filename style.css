@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1;
+    display: flex;
+    justify-content: space-around;
+    background-color: #0f1bc9;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+
+#anuncios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.anuncio {
+    width: 300px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.anuncio img {
+    max-width: 100%;
+    height: auto;
+}
+.descricao-completa {
+    display: none;
+    margin-top: 10px;
+}
+
+.anuncio img {
+    max-width: 70%;
+    height: auto;
+}

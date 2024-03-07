@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vendas</title>
+</head>
+<body>
+    <header>
+        <h1>SalesGames</h1>
+        <nav>
+            <ul>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                </ul>
+                <li><a href="#">anúncios</a></li>
+                <ul>
+                    <li><a href="cadastro.html">Cadastrar Anúncio</a></li>
+                </ul>
+                <ul>
+                    <li><a href="portifolio.html">Meu Perfil</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <section id="anuncios">
+        <article class="anuncio">
+            <img src="jogo1.png" alt="produto1">
+            <h2>Grand Theft Auto V</h2>
+            <h2>Preço:</h2>
+            <h2>R$ 150</h2>
+            
+            <p class="descricao-curta"></p>
+            <button class="ver-mais">Ver Mais</button>
+            <div class="descricao-completa">
+                <p>Um grande jogo de mundo aberto com uma história rica em detalhes.</p>
+            </div>
+        </article>
+        <article class="anuncio">
+            <img src="Tlou2.webp" alt="produto1">
+            <h2>The Last Of Us 2</h2>
+            <h2>Preço:</h2>
+            <h2>R$ 250</h2>
+            
+            <p class="descricao-curta"></p>
+            <button class="ver-mais">Ver Mais</button>
+            <div class="descricao-completa">
+                <p>Um jogo que se passa em um mundo pós apocalíptico, com incriveis graficos. Disponivel apenas para PS4/PS5.</p>
+            </div>
+        </article>
+        <article class="anuncio">
+            <img src="Zelda.webp" alt="produto1">
+            <h2>Zelda Breath Of The Wild </h2>
+            <h2>Preço:</h2>
+            <h2>R$ 250</h2>
+            
+            <p class="descricao-curta"></p>
+            <button class="ver-mais">Ver Mais</button>
+            <div class="descricao-completa">
+                <p>Um jogo eletrônico de ação-aventura desenvolvido pela Nintendo Entertainment Planning & Development e publicado pela Nintendo. Exclusivo para o console da Nintento</p>
+            </div>
+        </article>
+        <article class="anuncio">
+            <img src="f1-23-capa-1.jpg" alt="produto1">
+            <h2>F1 2023 </h2>
+            <h2>Preço:</h2>
+            <h2>R$ 130</h2>
+            
+            <p class="descricao-curta"></p>
+            <button class="ver-mais">Ver Mais</button>
+            <div class="descricao-completa">
+                <p>um videogame de corrida desenvolvido pela Codemasters e publicado pela EA Sports. É a décima sexta entrada da série F1 da Codemasters. Possui a licença oficial para os campeonatos de Fórmula 1 e Fórmula 2 de 2023.</p>
+            </div>
+        </article>
+        
+       
+        
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const botoesVerMais = document.querySelectorAll(".ver-mais");
+
+        botoesVerMais.forEach(botao => {
+            botao.addEventListener("click", function () {
+                const descricaoCompleta = this.parentElement.querySelector(".descricao-completa");
+                descricaoCompleta.style.display = descricaoCompleta.style.display === "none" ? "block" : "none";
+            });
+        });
+    });
+</script>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cadastrar Anúncio</title>
+</head>
+
